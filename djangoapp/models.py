@@ -7,6 +7,6 @@ class Rishab(models.Model):
     age=models.IntegerField()
     sex=models.CharField(max_length=10)
     color=models.CharField(max_length=30)
-    height= models.bollenField()
+  
     
     
