@@ -4,4 +4,4 @@ from .models import Abhishek
 class AbhishekSerializers(serializers.ModelSerializer):
     class Meta:
         model = Abhishek
-        fields = '__all__'
+        fields = '__all__',
