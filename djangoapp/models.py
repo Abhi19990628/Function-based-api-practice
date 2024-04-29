@@ -10,3 +10,17 @@ class Rishab(models.Model):
   
     
     
+[
+  {
+    "name": "John",
+    "age": 30,
+    "sex": "Male",
+    "color": "Blue"
+  },
+  {
+    "name": "Alice",
+    "age": 25,
+    "sex": "Female",
+    "color": "Red"
+  }
+]
