@@ -43,5 +43,5 @@ def AbhishekDetailsList(resquest , pk ):
             return Response(abhishekSerializers.errors, status=status.HTTP_404_NOT_FOUND)
         
     elif resquest.method =='DELETE':
-        abhishek.delete
+        abhishek.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
