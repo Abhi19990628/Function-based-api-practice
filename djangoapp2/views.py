@@ -35,7 +35,7 @@ def AbhishekDetailsList(resquest , pk ):
         return Response(abhishekSerializers.data)
     
     elif resquest.method == 'PUT':
-        abhishekSerializers=AbhishekSerializers(abhishek , data=abhishek.data)
+        abhishekSerializers=AbhishekSerializers(abhishek , data=resquest.data)
         if abhishekSerializers.is_valid():
             abhishekSerializers.save()
             return Response(abhishekSerializers.data)
