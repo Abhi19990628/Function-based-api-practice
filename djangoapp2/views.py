@@ -14,7 +14,7 @@ def AbhishekViewList(request):
         return Response(abhishekSerializers.data)
     
     elif request.method == 'POST':
-        abhishekSerializers=AbhishekSerializers(data=abhishek.data)
+        abhishekSerializers=AbhishekSerializers(data=request.data)
         if abhishekSerializers.is_valid():
             abhishekSerializers.save()
             return Response(abhishekSerializers.data)
