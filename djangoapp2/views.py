@@ -7,13 +7,13 @@ from .serializer import AbhishekSerializers
 
 
 @api_view(['GET','POST'])
-def AbhishekViewList(requeat):
-    if requeat.method == 'GET':
+def AbhishekViewList(request):
+    if request.method == 'GET':
         abhishek=Abhishek.objects.all()
         abhishekSerializers=AbhishekSerializers(abhishek , many=True)
         return Response(abhishekSerializers.data)
     
-    elif requeat.method == 'POST':
+    elif request.method == 'POST':
         abhishekSerializers=AbhishekSerializers(data=abhishek.data)
         if abhishekSerializers.is_valid():
             abhishekSerializers.save()
