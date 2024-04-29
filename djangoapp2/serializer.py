@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Abhishek
+from .models import Abhishek,
 
 class AbhishekSerializers(serializers.ModelSerializer):
     class Meta:
